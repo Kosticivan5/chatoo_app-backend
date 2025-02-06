@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // Specifies ECMAScript target version (ES6 for modern JS)
+    "esModuleInterop": true, // Enables default imports from modules with no default export
+    "module": "CommonJS", // Specifies module system (CommonJS is standard for Node.js)
+    "rootDir": "./src", // Defines the root directory of your TypeScript files
+    "outDir": "./dist", // Specifies the output directory for compiled JS files
+    "strict": true, // Enables all strict type-checking options (recommended)
+    "forceConsistentCasingInFileNames": true, // Ensures file names are consistently capitalized
+    "skipLibCheck": true, // Skips type checking of declaration files (improves compilation speed)
+    "moduleResolution": "node"
+  }
+}
