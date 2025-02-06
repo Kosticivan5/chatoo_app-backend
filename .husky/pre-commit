@@ -1,1 +1,13 @@
-npx lint-staged
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+
+echo '🔍🎨 Formatting and checking staged files before committing!'
+
+npx lint-staged ||
+(
+  echo '💀❌ Ooops! Formatting and checking process has failed!';
+  false;
+)
+
+echo '🥳✅ Formatting and checking process has been successfully completed!'
