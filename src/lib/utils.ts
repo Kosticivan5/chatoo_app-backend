@@ -1,6 +1,4 @@
 import jwt from "jsonwebtoken";
-import type { Response } from "express";
-import { Types } from "mongoose";
 import type { UserId, ResWithCookie } from "../types";
 
 export const generateToken = (userId: UserId, res: ResWithCookie) => {

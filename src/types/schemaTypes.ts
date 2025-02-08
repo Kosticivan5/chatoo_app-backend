@@ -6,6 +6,13 @@ export interface UserSchema extends Document {
   fullName: string;
   password: string;
   profilePic?: string;
-  createdAt?: Date;
-  updatedAt?: Date;
+  // createdAt?: Date;
+  // updatedAt?: Date;
+}
+
+export interface MessageSchema extends Document {
+  senderId: Types.ObjectId;
+  receiverId: Types.ObjectId;
+  text?: string;
+  image?: string;
 }
